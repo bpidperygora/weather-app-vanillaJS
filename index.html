@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather APP Vanilla JS</title>
-    <meta name=“theme-color” content=“#FFFFFF”>
+    <meta name=“theme-color” content=“#00F2F2”>
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -12,21 +13,37 @@
 </head>
 <body>
 <header>
-
+    <div class="search-box">
+        <input type="text" id="search-inp" placeholder="Search...">
+    </div>
 </header>
 <main>
-
+    <div class="visualization"></div>
 </main>
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-12 center">
-                © some text дякий текст 2020 <a href="https://www.linkedin.com/in/borys-pidperygora/">Borys Pidperygora</a>
+                &copy; <span id="footer-date">0000</span>
+                <a href="https://www.linkedin.com/in/borys-pidperygora/">
+                    <span class="nowrap">Borys Pidperygora</span>
+                </a>
             </div>
         </div>
     </div>
-    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    <div class="bottom-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 center">
+                    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                        href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 <script type="text/javascript" async="" src="./build/js/main.js	"></script>
+<script type="text/javascript" async="" src="./build/js/components/page.js"></script>
+<script type="text/javascript" async="" src="./build/js/components/weather.js"></script>
 </body>
 </html>
