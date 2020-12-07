@@ -6464,3 +6464,8 @@ progress
 {
     display: none !important;
 }
+
+.center
+{
+    text-align: center;
+}

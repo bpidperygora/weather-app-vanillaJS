@@ -82,13 +82,3 @@ function css(el, styles) {
     el.style[property] = styles[property];
   }
 }
-
-Array.prototype.forEach.call(document.querySelectorAll('.to_back'), function (events) {
-  events.addEventListener('click', function () {
-    history.back();
-
-    if (history.length === 0 || history.length === 1) {
-      location.href = location.origin + '/' + location.pathname.split('/')[1];
-    }
-  });
-});
